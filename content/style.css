@@ -84,7 +84,7 @@ input.fake:checked+.modal {
 }
 
 .title>.link {
-  border-right: 1px solid white;
+  border-right: 1px solid rgb(235, 101, 166);
   cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ input.fake {
 
 header>.modal {
   text-align: right;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(192, 59, 152);
   margin: 16px 0;
 }
 
@@ -116,7 +116,7 @@ input[type="password"],
 textarea,
 .comment>p {
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #d941a4;
   border-radius: 4px;
   padding: 4px 6px;
   font-size: inherit;
