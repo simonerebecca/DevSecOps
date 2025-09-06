@@ -103,7 +103,7 @@ input.fake {
 
 header>.modal {
   text-align: right;
-  border-top: 1px solid rgb(192, 59, 152);
+  border-top: 1px solid rgb(199, 193, 197);
   margin: 16px 0;
 }
 
@@ -116,7 +116,7 @@ input[type="password"],
 textarea,
 .comment>p {
   width: 100%;
-  border: 1px solid #d941a4;
+  border: 1px solid #eeeced;
   border-radius: 4px;
   padding: 4px 6px;
   font-size: inherit;
@@ -184,7 +184,7 @@ form .error {
 
 .img4 {
   background-image: url(https://cdn.glitch.com/2c3ff6b1-6ba9-4f7b-9054-82101e6a02d3%2Fgregory-hayes-737961-unsplash.jpg.png?1531840608935);
-  color: #ffebcb;
+  color: #e27ce2;
 }
 
 .img5 {
