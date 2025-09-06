@@ -19,7 +19,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: white;
+  color: rgba(231, 77, 167, 0.283);
   z-index: 1;
   transition: background-color 1s;
   background-color: rgba(63, 77, 92, 0);
