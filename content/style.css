@@ -84,7 +84,7 @@ input.fake:checked+.modal {
 }
 
 .title>.link {
-  border-right: 1px solid rgb(235, 101, 166);
+  border-right: 1px solid rgb(207, 203, 205);
   cursor: pointer;
 }
 
@@ -260,5 +260,5 @@ p.warn {
   margin: 0 0 12px 0;
   font-weight: bold;
   font-size: 85%;
-  color: rgb(245, 205, 235);
+  color: rgb(205, 200, 203);
 }
