@@ -57,7 +57,7 @@ input.fake:checked+.modal {
 
 .modal>form {
   display: block;
-  background-color: rgba(119, 25, 80, 0.655);
+  background-color: rgba(144, 142, 143, 0.655);
   border-radius: 8px;
   padding: 16px;
   width: 350px;
@@ -151,7 +151,7 @@ form .error {
   background-size: cover;
   font-size: 5vw;
   padding: 8% 4%;
-  color: #555;
+  color: #ff69b4 !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
