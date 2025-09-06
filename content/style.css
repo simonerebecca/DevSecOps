@@ -19,7 +19,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: rgba(231, 77, 167, 0.283);
+  color: rgba(236, 232, 234, 0.283);
   z-index: 1;
   transition: background-color 1s;
   background-color: rgba(63, 77, 92, 0);
@@ -57,7 +57,7 @@ input.fake:checked+.modal {
 
 .modal>form {
   display: block;
-  background-color: rgba(219, 44, 181, 0.655);
+  background-color: rgba(119, 25, 80, 0.655);
   border-radius: 8px;
   padding: 16px;
   width: 350px;
@@ -116,7 +116,7 @@ input[type="password"],
 textarea,
 .comment>p {
   width: 100%;
-  border: 1px solid #eeeced;
+  border: 1px solid #f3e6ed;
   border-radius: 4px;
   padding: 4px 6px;
   font-size: inherit;
@@ -142,7 +142,7 @@ textarea {
 }
 
 form .error {
-  color: #f3ccec;
+  color: #dcd9dc;
   margin-bottom: 16px;
 }
 
@@ -184,7 +184,7 @@ form .error {
 
 .img4 {
   background-image: url(https://cdn.glitch.com/2c3ff6b1-6ba9-4f7b-9054-82101e6a02d3%2Fgregory-hayes-737961-unsplash.jpg.png?1531840608935);
-  color: #e27ce2;
+  color: #dfddc9;
 }
 
 .img5 {
@@ -260,5 +260,5 @@ p.warn {
   margin: 0 0 12px 0;
   font-weight: bold;
   font-size: 85%;
-  color: #c44;
+  color: rgb(245, 205, 235);
 }
