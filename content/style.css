@@ -19,7 +19,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: rgba(236, 232, 234, 0.283);
+  color: rgba(238, 209, 223, 0.283);
   z-index: 1;
   transition: background-color 1s;
   background-color: rgba(63, 77, 92, 0);
@@ -74,7 +74,7 @@ input.fake:checked+.modal {
   margin: 0;
   flex: 1;
   text-decoration: none;
-  color: #f36dd6 !important;
+  color: #f36dd6;
 }
 
 .title>.link {
@@ -116,7 +116,7 @@ input[type="password"],
 textarea,
 .comment>p {
   width: 100%;
-  border: 1px solid #f3e6ed;
+  border: 1px solid #6b6a6b;
   border-radius: 4px;
   padding: 4px 6px;
   font-size: inherit;
@@ -147,7 +147,7 @@ form .error {
 }
 
 .quote {
-  color: #d767ac;
+  color: #a48899;
   background-position: center;
   background-size: cover;
   font-size: 5vw;
