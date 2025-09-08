@@ -55,6 +55,13 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
+
+      - name: Use existing registry secret for all pods
+        run: |
+          sudo kubectl -n default patch serviceaccount default \
+            --type='strategic' \
+            -p '{"imagePullSecrets":[{"name":"my-registry-secret"}]}'
+
       - run: |
           sudo kubectl delete deployment --all              
           sudo kubectl apply -f ${{ github.workspace }}/kubernetes/deployment.yaml --force
