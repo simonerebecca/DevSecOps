@@ -53,8 +53,7 @@ jobs:
     needs: [test]
     runs-on: self-hosted
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Use existing registry secret for all pods
         run: |
@@ -62,7 +61,14 @@ jobs:
             --type='strategic' \
             -p '{"imagePullSecrets":[{"name":"my-registry-secret"}]}'
 
-      - run: |
-          sudo kubectl delete deployment --all              
-          sudo kubectl apply -f ${{ github.workspace }}/kubernetes/deployment.yaml --force
-          sudo kubectl apply -f ${{ github.workspace }}/kubernetes/nginx-service.yaml --force
+      - name: Apply manifests
+        run: |
+          sudo kubectl apply -f ${{ github.workspace }}/kubernetes/deployment.yaml
+          sudo kubectl apply -f ${{ github.workspace }}/kubernetes/nginx-service.yaml
+
+      - name: Rollout new image
+        env:
+          IMAGE: simoneverhagen/student-app:${{ github.sha }}
+        run: |
+          sudo kubectl set image deployment/student-devsecops quoterxp=$IMAGE
+          sudo kubectl rollout status deployment/student-devsecops --timeout=180s
