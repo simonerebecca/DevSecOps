@@ -27,6 +27,8 @@ jobs:
           push: true
           tags: |
             simoneverhagen/student-app:latest
+            simoneverhagen/student-app:${{ github.sha }}
+
   test:
     name: Test
     needs: [build]
@@ -52,6 +54,12 @@ jobs:
     needs: [test]
     runs-on: self-hosted
     steps:
+      - name: Patch default ServiceAccount to use imagePullSecret
+        run: |
+          kubectl -n default patch serviceaccount default \
+            --type='strategic' \
+            -p '{"imagePullSecrets":[{"name":"regcred"}]}'
+
       - name: Checkout source code
         uses: actions/checkout@v4
       - run: |
