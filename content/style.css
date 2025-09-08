@@ -19,10 +19,10 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  color: rgba(238, 209, 223, 0.283);
+  color: rgba(186, 167, 176, 0.283);
   z-index: 1;
   transition: background-color 1s;
-  background-color: rgba(63, 77, 92, 0);
+  background-color: rgba(95, 113, 133, 0);
   padding: 8px 12px;
 }
 
@@ -74,7 +74,7 @@ input.fake:checked+.modal {
   margin: 0;
   flex: 1;
   text-decoration: none;
-  color: #f36dd6;
+  color: #666165;
 }
 
 .title>.link {
@@ -84,7 +84,7 @@ input.fake:checked+.modal {
 }
 
 .title>.link {
-  border-right: 1px solid rgb(207, 203, 205);
+  border-right: 1px solid rgb(101, 97, 99);
   cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ input.fake {
 
 header>.modal {
   text-align: right;
-  border-top: 1px solid rgb(199, 193, 197);
+  border-top: 1px solid rgb(82, 78, 81);
   margin: 16px 0;
 }
 
@@ -121,7 +121,7 @@ textarea,
   padding: 4px 6px;
   font-size: inherit;
   margin: 0 0 16px 0;
-  color: #dc71c3;
+  color: #292528;
   background-color: inherit;
 }
 
