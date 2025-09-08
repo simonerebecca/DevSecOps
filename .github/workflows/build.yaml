@@ -59,4 +59,5 @@ jobs:
           sudo kubectl delete deployment --all              
           sudo kubectl apply -f ${{ github.workspace }}/kubernetes/deployment.yaml --force
           sudo kubectl apply -f ${{ github.workspace }}/kubernetes/nginx-service.yaml --force
-          sudo kubectl get pods -l app=student-devsecops -o wide
+          sudo kubectl -n default patch deployment student-devsecops --type='json' \
+          -p='[{"op":"add","path":"/spec/template/spec/imagePullSecrets","value":[]}]' || true
