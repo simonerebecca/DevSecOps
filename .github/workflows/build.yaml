@@ -59,3 +59,4 @@ jobs:
           sudo kubectl delete deployment --all              
           sudo kubectl apply -f ${{ github.workspace }}/kubernetes/deployment.yaml --force
           sudo kubectl apply -f ${{ github.workspace }}/kubernetes/nginx-service.yaml --force
+          sudo kubectl get pods -l app=student-devsecops -o wide
