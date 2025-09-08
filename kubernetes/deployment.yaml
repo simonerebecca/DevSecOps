@@ -17,11 +17,10 @@ spec:
         app: quoterxp
     spec:
       containers:
-      - name: quoterxp
-        image: simoneverhagen/student-app:latest
-        imagePullPolicy: Always
-        ports:
-          - containerPort: 5000
+        - name: quoterxp
+          image: simoneverhagen/student-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
       imagePullSecrets:
-        - name: regcred
-         
+        - name: my-registry-secret

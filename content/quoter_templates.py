@@ -68,7 +68,7 @@ def page(content,user_id,title,error=None):
 <head>
   <title>{title or "Quoter XP"}</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" href="/static/styles.css?v={{GITHUB_SHA}}">
 </head>
 
 <body>
