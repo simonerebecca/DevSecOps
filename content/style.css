@@ -74,7 +74,7 @@ input.fake:checked+.modal {
   margin: 0;
   flex: 1;
   text-decoration: none;
-  color: #666165;
+  color: #f5f4f4;
 }
 
 .title>.link {
@@ -84,7 +84,7 @@ input.fake:checked+.modal {
 }
 
 .title>.link {
-  border-right: 1px solid rgb(101, 97, 99);
+  border-right: 1px solid rgb(255, 252, 254);
   cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ input.fake {
 
 header>.modal {
   text-align: right;
-  border-top: 1px solid rgb(82, 78, 81);
+  border-top: 1px solid rgb(255, 251, 254);
   margin: 16px 0;
 }
 
