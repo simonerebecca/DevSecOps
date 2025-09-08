@@ -74,7 +74,7 @@ input.fake:checked+.modal {
   margin: 0;
   flex: 1;
   text-decoration: none;
-  color: #886df3 !important;
+  color: #f36dd6 !important;
 }
 
 .title>.link {
@@ -121,7 +121,7 @@ textarea,
   padding: 4px 6px;
   font-size: inherit;
   margin: 0 0 16px 0;
-  color: #6ad877 !important;
+  color: #dc71c3;
   background-color: inherit;
 }
 
@@ -147,7 +147,7 @@ form .error {
 }
 
 .quote {
-  color: #6de260 !important;
+  color: #d767ac;
   background-position: center;
   background-size: cover;
   font-size: 5vw;
