@@ -33,7 +33,7 @@ def check_authentication():
 @app.route("/")
 def index():
     quotes = db.execute("select id, text, attribution from quotes order by id").fetchall()
-    html = "<h1 style='color:#ff69b4; text-align:center; font-size:64px'>TESTTESTTEST!!!</h1>"
+    html = "<h1 style='color:#886df3; text-align:center; font-size:64px'>TESTTESTTEST!!!</h1>"
     return html + templates.main_page(quotes, request.user_id, request.args.get('error'))
 
 

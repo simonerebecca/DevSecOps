@@ -121,7 +121,7 @@ textarea,
   padding: 4px 6px;
   font-size: inherit;
   margin: 0 0 16px 0;
-  color: #ff69b4 !important;
+  color: #6ad877 !important;
   background-color: inherit;
 }
 
@@ -147,7 +147,7 @@ form .error {
 }
 
 .quote {
-  color: #ff69b4 !important;
+  color: #6de260 !important;
   background-position: center;
   background-size: cover;
   font-size: 5vw;
