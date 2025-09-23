@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "af913a6c-6e03-4553-b98d-d23fe8237ae6",
+		"name": "Testing",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "48676109-af913a6c-6e03-4553-b98d-d23fe8237ae6"
+	},
+	"item": [
+		{
+			"name": "devsecops",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a90e04c2-273f-42d9-a028-84158007572d",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "5327a1c7-e1e3-4894-bda4-c0bb2d7066d0",
+						"exec": [
+							"pm.test(\"Status is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body bevat tekst\", function () {\r",
+							"  pm.expect(pm.response.text()).to.include(\"TEST\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"id": "4404112a-772c-43f3-bf00-12a2f0a28a37",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.92.196.16:30000/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"92",
+						"196",
+						"16"
+					],
+					"port": "30000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fe15a983-3e24-4d34-a024-e1ab5924937d",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a55a56ec-9f05-4adb-9a38-8378a03051bf",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
