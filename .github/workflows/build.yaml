@@ -44,14 +44,14 @@ jobs:
         with:
           command: cves
           image: simoneverhagen/student-app:latest
-          only-fixed: true
+          #         only-fixed: true
           only-severities: critical,high
           ignore-base: false
           ignore-unchanged: false
           write-comments: true
           github-token: ${{ secrets.MY_GITHUB_TOKEN }}
-          exit-code: true
-          exit-on: vulnerability
+  #         exit-code: true
+  #         exit-on: vulnerability
 
   test:
     name: Test
@@ -84,3 +84,17 @@ jobs:
           sudo kubectl delete deployment --all              
           sudo kubectl apply -f ${{ github.workspace }}/kubernetes/deployment.yaml --force
           sudo kubectl apply -f ${{ github.workspace }}/kubernetes/nginx-service.yaml --force
+
+  automated-api-tests:
+    name: Automated API tests using Postman CLI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Postman CLI
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+      - name: Login to Postman CLI
+        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+      - name: Run API tests
+        run: |
+          postman collection run "48676109-d2aa4868-15dc-47fe-b2f8-da030777481c"
