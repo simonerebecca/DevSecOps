@@ -44,14 +44,14 @@ jobs:
         with:
           command: cves
           image: simoneverhagen/student-app:latest
-          #         only-fixed: true
+          only-fixed: true
           only-severities: critical,high
           ignore-base: false
           ignore-unchanged: false
           write-comments: true
           github-token: ${{ secrets.MY_GITHUB_TOKEN }}
-  #         exit-code: true
-  #         exit-on: vulnerability
+          exit-code: true
+          exit-on: vulnerability
 
   test:
     name: Test
