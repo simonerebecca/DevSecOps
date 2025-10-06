@@ -48,7 +48,7 @@ jobs:
           only-severities: critical,high
           ignore-base: false
           ignore-unchanged: false
-          write-comments: true
+          write-comment: true
           github-token: ${{ secrets.MY_GITHUB_TOKEN }}
           #exit-code: true
           #exit-on: vulnerability
