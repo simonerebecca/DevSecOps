@@ -3,7 +3,7 @@ import sqlite3
 import urllib
 import quoter_templates as templates
 
-# Run using `poetry install && poetry run flask run --reload`
+# Run using `poetry install && poetry run flask run -reload`
 app = Flask(__name__)
 app.static_folder = '.'
 
